@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 # Returns
-## Optional type enforement for python with a more 'readable' syntax
+## Optional type enforcement for python with a more 'readable' syntax
 ---
 Returns lets you declare what you are expecting to be returned from a function with a simple decorator.
 

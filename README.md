@@ -1,9 +1,9 @@
 # Returns
-## Optional type enforement for python with a more 'readable' syntax
+## Optional type enforcement for python with a more 'readable' syntax
 ---
 Returns lets you declare what you are expecting to be returned from a function with a simple decorator.
 
-I'm aware that python already has type hints. I'm also aware that it's probably better than this. 
+I'm aware that python already has type hints. I'm also aware that it's probably better than this.
 
 ```python
 @returns(some_class(), error_msg="fancier than default", warnonly=True)
