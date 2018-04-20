@@ -22,8 +22,6 @@ warnonly: if set to false a TypeError is raised
 Written on a whim and with questionable style choices by Eli McRae.
 
 """
-from six import print_
-
 def returns(the_type_you_expect, error_msg="", warnonly=False):
     def inner_decorator(orig_function):
         def wrapper(*args, **kwargs):
@@ -32,7 +30,7 @@ def returns(the_type_you_expect, error_msg="", warnonly=False):
                 nonlocal error_msg # because we're assigning...
                 if error_msg == "":
                     error_msg = f"You're expecting a {type(the_type_you_expect)} rather than a {type(res)} to be returned from function named {orig_function.__name__}."
-                print_(error_msg)
+                print(error_msg)
                 if warnonly == False:
                     raise TypeError
             return res
